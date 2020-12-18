@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registro de usuario utest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-18T05:29:21" hostname="SOFT_DEVELOPER" time="89.315">
+<testsuite name="Registro de usuario utest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-18T06:42:31" hostname="SOFT_DEVELOPER" time="70.375">
   <properties/>
-  <testcase name="Registro de usuario en la comunidad de probadores utest" classname="Registro de usuario utest" time="89.315">
+  <testcase name="Registro de usuario en la comunidad de probadores utest" classname="Registro de usuario utest" time="70.375">
     <failure message="java.lang.AssertionError: &#10;Expected: is &quot;Welcome to the world's largest community of freelance software testers!&quot;&#10;     but: was &quot;Welcome to the world's largest community of testers.&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
 Expected: is &quot;Welcome to the world's largest community of freelance software testers!&quot;
      but: was &quot;Welcome to the world's largest community of testers.&quot;
@@ -13,18 +13,17 @@ Expected: is &quot;Welcome to the world's largest community of freelance softwar
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[dic. 18, 2020 12:29:23 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+  <system-err><![CDATA[dic 18, 2020 1:42:33 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --incognito, --start-maximized, goog:chromeOptions: {args: [--incognito, --start-maximized, --enable-automation, --test-type], extensions: []}, platform: ANY, version: }
-Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 29898
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --incognito, --start-maximi..., goog:chromeOptions: {args: [--incognito, --start-maximized, --no-sandbox, --ignore-certificate-errors, --homepage = about: blank, --no-first-run, --enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 27154
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-dic. 18, 2020 12:29:37 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-dic. 18, 2020 12:30:50 A. M. org.openqa.selenium.os.OsProcess destroy
-SEVERE: Unable to kill process Process[pid=25348, exitValue=1]
+[1608273771.696][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
+dic 18, 2020 1:42:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 

@@ -7,7 +7,7 @@
 
 1 Scenarios (?[31m1 failed?[0m)
 3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-1m30,375s
+1m11,412s
 
 java.lang.AssertionError: 
 Expected: is "Welcome to the world's largest community of freelance software testers!"
