@@ -1,6 +1,7 @@
 package com.utest.certificacion.utest.stepdefinitions;
 
 import com.utest.certificacion.utest.models.DatoRegistro;
+import com.utest.certificacion.utest.questions.ElMensaje;
 import com.utest.certificacion.utest.tasks.Registrarse;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -12,12 +13,16 @@ import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.thucydides.core.annotations.Managed;
+
 import org.openqa.selenium.WebDriver;
 
 import java.util.List;
 
 import static com.utest.certificacion.utest.userinterfaces.HomeComponents.*;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.equalTo;
 
 public class RegistroStepDefinition {
 
@@ -45,6 +50,7 @@ public class RegistroStepDefinition {
 
     @Then("^el deberia ver el Mensaje: (.*)$")
     public void elDeberiaVerElMensajeWelcomeToTheWorldSLargestCommunityOfFreelanceSoftwareTesters(String mensaje) {
+        theActorInTheSpotlight().should(seeThat(ElMensaje.mostrado(), is(equalTo(mensaje))));
 
     }
 
