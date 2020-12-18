@@ -57,11 +57,11 @@ public class FormularioRegistroComponents {
             .the("Campo Confirmar Contraseña")
             .located(By.name("newsletterOptIn"));
 
-    public static final Target UTEST_TERMS_OF_USE = Target
+    public static final Target CHECKBOX_UTEST_TERMS_OF_USE = Target
             .the("Selecciona Terminos de uso de Utest")
             .located(By.name("termOfUse"));
 
-    public static final Target I_HAVE_READ_AND_ACCEPT = Target
+    public static final Target CHECKBOX_I_HAVE_READ_AND_ACCEPT = Target
             .the("Selecciona he leido y acepto la politica de Privacidad")
             .located(By.id("privacySetting"));
 
