@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registro de usuario utest" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-12-18T03:04:32" hostname="SOFT_DEVELOPER" time="0.043">
+<testsuite name="Registro de usuario utest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-18T05:29:21" hostname="SOFT_DEVELOPER" time="89.315">
   <properties/>
-  <testcase name="Registro de usuario en la comunidad de probadores utest" classname="Registro de usuario utest" time="0.043">
-    <skipped/>
+  <testcase name="Registro de usuario en la comunidad de probadores utest" classname="Registro de usuario utest" time="89.315">
+    <failure message="java.lang.AssertionError: &#10;Expected: is &quot;Welcome to the world's largest community of freelance software testers!&quot;&#10;     but: was &quot;Welcome to the world's largest community of testers.&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &quot;Welcome to the world's largest community of freelance software testers!&quot;
+     but: was &quot;Welcome to the world's largest community of testers.&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:300)
+	at com.utest.certificacion.utest.stepdefinitions.RegistroStepDefinition.elDeberiaVerElMensajeWelcomeToTheWorldSLargestCommunityOfFreelanceSoftwareTesters(RegistroStepDefinition.java:53)
+	at ✽.el deberia ver el Mensaje: Welcome to the world's largest community of freelance software testers!(src/test/resources/features/registro.feature:12)
+</failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
- _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
-(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
- |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
-(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
-                                                                                
+  <system-err><![CDATA[dic. 18, 2020 12:29:23 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --incognito, --start-maximized, goog:chromeOptions: {args: [--incognito, --start-maximized, --enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 29898
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic. 18, 2020 12:29:37 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+dic. 18, 2020 12:30:50 A. M. org.openqa.selenium.os.OsProcess destroy
+SEVERE: Unable to kill process Process[pid=25348, exitValue=1]
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PENDING: Registro de usuario en la comunidad de probadores utest
----------------------------------------------------------------------------------
+TEST FAILED: Registro de usuario en la comunidad de probadores utest
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then el mensaje should be 'Welcome to the world's largest community of freelance software testers!'
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: is "Welcome to the world's largest community of freelance software testers!" but: was "Welcome to the world's largest community of testers."
 ]]></system-err>
 </testsuite>

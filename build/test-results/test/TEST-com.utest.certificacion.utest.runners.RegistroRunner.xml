@@ -2,36 +2,21 @@
 <testsuite name="com.utest.certificacion.utest.runners.RegistroRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="SOFT_DEVELOPER" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[33m1 undefined?[0m)
-3 Steps (?[33m3 undefined?[0m)
-0m1,994s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/registro.feature:7 ?[0m# Registro de usuario en la comunidad de probadores utest
 
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+1m30,375s
 
-You can implement missing steps with the snippets below:
-
-@Given("^que Nicolas Alvarino se encuentra en el Home de la pagina$")
-public void queNicolasAlvarinoSeEncuentraEnElHomeDeLaPagina() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-
-@When("^el se registra con sus datos$")
-public void elSeRegistraConSusDatos(DataTable arg1) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
-    // E,K,V must be a scalar (String, Integer, Date, enum etc).
-    // Field names for YourType must match the column names in 
-    // your feature file (except for spaces and capitalization).
-    throw new PendingException();
-}
-
-@Then("^el deberia ver el Mensaje: Welcome to the world's largest community of freelance software testers!$")
-public void elDeberiaVerElMensajeWelcomeToTheWorldSLargestCommunityOfFreelanceSoftwareTesters() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
+java.lang.AssertionError: 
+Expected: is "Welcome to the world's largest community of freelance software testers!"
+     but: was "Welcome to the world's largest community of testers."
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:300)
+	at com.utest.certificacion.utest.stepdefinitions.RegistroStepDefinition.elDeberiaVerElMensajeWelcomeToTheWorldSLargestCommunityOfFreelanceSoftwareTesters(RegistroStepDefinition.java:53)
+	at ?.el deberia ver el Mensaje: Welcome to the world's largest community of freelance software testers!(src/test/resources/features/registro.feature:12)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
